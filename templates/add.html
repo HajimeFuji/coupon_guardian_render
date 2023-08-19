@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% block content %}
+<main>
+
+    <div class="coupon-container">
+        <form action="/add" method="POST" class="form">
+            <div class="input-item">
+
+                <div id="container">
+
+                    <table>
+                        <tr>
+                            <th class="name">店名</th>
+                            <td><input type="text" name="shop_name" class="input"></td>
+                        </tr>
+                        <tr>
+                            <th class="name">クーポン名</th>
+                            <td><input type="text" name="coupon_name" class="input"></td>
+                        </tr>
+                        <tr>
+                            <th class="name">有効期限</th>
+                            <td><input type="date" name="expiration" class="input"></td>
+                        </tr>
+                    </table>
+                </div>
+                
+            </div>
+            <div class="primary">
+                <a class="btn btn-primary" href="/list">キャンセル</a>
+                <input type="submit" value="クーポン追加" class="btn btn-primary">
+            </div>
+        </form>
+    </div>
+
+</main>
+{% endblock %}

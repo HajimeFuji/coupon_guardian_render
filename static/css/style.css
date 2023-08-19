@@ -1,0 +1,244 @@
+/* ベーススタイル */
+body {
+    font-family: 'Arial', YuGothic, 'Yu Gothic', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'メイリオ', Meiryo, 'ＭＳ ゴシック', sans-serif;
+    color: #333333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input {
+    display: block;
+    width: 100%;
+    height: 36px;
+    padding: 1px 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+/* --------------------------------------- */
+
+/* ヘッダー */
+.header{
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 100%;
+    padding: 0 10%;
+    background-color: #ff4538; */
+
+    height: 80px;
+    width: 100%;
+    background-color: #ff4538;
+    /* position: fixed;
+    top: 0; */
+}
+
+.header-container{
+    width: 350px; /* max-widthからwidthに変更 */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.app-title{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+.menu-link{
+    color: #ffffff;
+} 
+
+/* フォーム */
+.loginbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form{
+    padding: 20px 20px 20px 35px;
+    border-top-left-radius: 4px;
+    background-color: #fff;
+    box-shadow: 0px 1px 6px #b7b6b6;
+    height: 140px;
+    width: 300px;
+    margin: 10%;
+    font-size: 12px;
+}
+
+.item{
+    padding: 0px 2px;
+}
+
+.input{
+    margin: 2px 10px;
+}
+
+.item label{
+    padding: 5px;
+}
+
+.from .btn{
+    margin: 0;
+    margin-top: 60px;
+}
+
+.input-item{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.input-item input{
+    height: 20px;
+    width: 150px;
+}
+
+.input-item label{
+    display: block;
+    margin-bottom: 4px;
+}
+
+/* ボタンスタイル */
+.btn{
+    display: block;
+    margin: 30px auto;
+    border-radius: 4px;
+    border: none;
+    transition: opacity 0.3s ease;
+}
+
+.btn:hover{
+    opacity: 0.7;
+}
+
+.btn-primary{
+    background-color: #ff4538;
+    color: #fff;
+    margin: 0px 20px;
+    padding:0px 5px;
+    width: 85px;
+    height: 20px;
+    text-align: center;
+}
+
+.primary{
+    display: flex;
+    flex-direction: row;
+}
+
+.btn-secondary{
+    border: 1px solid #ff4538;
+    background-color: #fff;
+    color: #ff4538;
+}
+
+.task-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 80px);
+}
+
+/* list.html */
+.page-head{
+    margin-top: 120px;
+    margin-bottom: 60px;
+    color: #ff4538;
+    font-size: 24px;
+    text-align: center;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    align-items: center;
+    justify-content: center;
+    /* margin-bottom: 90px; */
+    margin: 50px 0;
+}
+
+/* add　ボタンスタイル */
+.fa-plus{
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background-color: #FF4538;
+    text-align: center;
+    line-height: 42px;
+    bottom: 20px;
+    position: fixed;
+}
+
+/* 幅を明示 */
+.coupon-wrap{
+    width: 350px;
+}
+
+.card-wrap{
+    width: 80%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.card{
+    width: 100%;
+    /* padding: 30px; */
+    padding: 10px 20px; /* paddingを微調整 */
+    margin-bottom: 30px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0px 1px 6px #bebebe;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.coupon-info{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+
+.task-title{
+    margin-bottom: 15px;
+    color: #333333;
+    line-height: 1.5;
+}
+
+.expiration{
+    color: #ff4538;
+}
+
+.icon-wrap{
+    display: flex;
+    column-gap: 12px;
+    justify-content: end;
+}
+
+.circle{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #ffc331;
+    text-align: center;
+    line-height: 32px;
+}
+
+.fa-pen,.fa-trash{
+    /* color: #ffffff; */
+    font-size: 14px;
+}
+
+/* index.html */
+.input-user{
+    height: 20px;
+    width: 150px;
+    margin: 5px;
+}
